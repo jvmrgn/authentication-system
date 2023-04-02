@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles/personalPage.css" type="text/css">
+  </head>
+    <body>
+      <h1>Bem-vindo(a), <%= username %>!</h1>
+      <p>Aqui estão as suas informações pessoais:</p>
+
+      <form action="/adicionarTarefa" method="POST">
+        <label for="tarefa">Tarefa:</label>
+        <input type="text" id="tarefa" name="tarefa" required>
+        <br>
+        <label for="data">Data:</label>
+        <input type="data" id="data" name="data">
+        <br>
+        <button type="submit">Adicionar</button>
+      </form>  
+
+      </body>
+    </html>
